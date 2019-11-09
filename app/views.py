@@ -9,21 +9,15 @@ from app import app
 @app.route('/', methods=['GET', 'POST'])
 def index():
 
-    games = pd.read_csv('./app/data/results.csv')
-    team_list = pd.concat([games['home_team'], games['away_team']]
-                          ).sort_values().unique()
-    del games
+    countries = pd.read_json('./app/static/data/countries.json', orient='index', typ='series')
+    # pd.Series(team_list).to_json('teams.json')
 
     if request.method == 'POST':
         teams = request.form.to_dict()
-        print(teams)
-        teams = list(teams.values())
 
-        game = Game(model, team_1=teams[0], team_2=teams[1])
+        game = Game(model, team_1=teams['team'], team_2=teams['opponent'])
         game.compute_result()
-        
-        # result = get_match_result(model, teams[0], teams[1])
 
-        return render_template("index.html", teams=team_list, game=game)
+        return render_template("index.html", teams=countries, game=game)
 
-    return render_template("index.html", teams=team_list)
+    return render_template("index.html", teams=countries)

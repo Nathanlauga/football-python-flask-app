@@ -1,43 +1,98 @@
 <html>
+  <head>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
   <body>
-    <h3>Income Prediction Form</h3>
-
-    <div>
-      <form action="/" method="POST">
-        <label>Equipe 1</label>
-        <select name="team">
-          {%for team in teams%}
-          <option value="{{ team }}">{{ team }}</option>
-          {%endfor%}
-        </select>
-        <label>Equipe 2</label>
-        <select name="opponent">
-          {%for team in teams%}
-          <option value="{{ team }}">{{ team }}</option>
-          {%endfor%}
-        </select>
-        <input type="submit" value="Submit" />
-      </form>
+    <div class="flex h-screen bg-grey content-center">
+      <div class="container mx-auto m-auto text-center">
+        <h1>International football game predictor</h1>
+        <form action="/" method="POST">
+          <div class="md:flex md:items-center mb-6">
+            <div class="md:w-1/2  text-right m-6">
+              <label class="inline-block font-bold" for="team">
+                Team 1
+              </label>
+              <select name="team" id="team" class="inline-block">
+                <option selected="selected">-- Choose a country</option>
+                {%for team, img_path in teams.iteritems()%} {%if game is defined
+                %} {%if game.team_1.name == team %}
+                <option value="{{ team }}" selected="selected">{{
+                  team
+                }}</option>
+                {%else%}
+                <option value="{{ team }}"> {{ team }}</option>
+                {%endif%} {%else%}
+                <option value="{{ team }}"> {{ team }}</option>
+                {%endif%} {%endfor%}
+              </select>
+            </div>
+            <div class="md:w-1/2 text-left m-6">
+              <select name="opponent" id="opponent" class="inline-block">
+                <option selected="selected">-- Choose a country</option>
+                {%for team, img_path in teams.iteritems()%} {%if game is defined
+                %} {%if game.team_2.name == team %}
+                <option value="{{ team }}" selected="selected">{{
+                  team
+                }}</option>
+                {%else%}
+                <option value="{{ team }}"> {{ team }}</option>
+                {%endif%} {%else%}
+                <option value="{{ team }}"> {{ team }}</option>
+                {%endif%} {%endfor%}
+              </select>
+              <label class="inline-block font-bold" for="opponent">
+                Team 2
+              </label>
+            </div>
+          </div>
+          <div class="text-center">
+            <input class="p-2 pr-5 pl-5" type="submit" value="Submit" />
+          </div>
+        </form>
+        {%if game is defined %}
+        <div>
+          <span
+            {%
+            if
+            game.is_winner(game.team_1)
+            %}
+            style="color:green"
+            {%
+            elif
+            game.is_looser(game.team_1)
+            %}
+            style="color:red"
+            {%
+            endif
+            %}
+          >
+            {{ game.team_1.name }}
+          </span>
+          <span>{{ game.result[0] }}</span>
+          <span>{{ game.result[1] }}</span>
+          <span
+            {%
+            if
+            game.is_winner(game.team_2)
+            %}
+            style="color:green"
+            {%
+            elif
+            game.is_looser(game.team_2)
+            %}
+            style="color:red"
+            {%
+            endif
+            %}
+          >
+            {{ game.team_2.name }}
+          </span>
+        </div>
+        {%endif%}
+      </div>
     </div>
-    {%if game is defined %}
-    <div>
-      <span 
-        {% if game.is_winner(game.team_1) %} style="color:green" 
-        {% elif game.is_looser(game.team_1) %} style="color:red" 
-        {% endif %}
-      >
-        {{ game.team_1.name }}
-      </span>
-      <span>{{ game.result[0] }}</span>
-      <span>{{ game.result[1] }}</span>
-      <span 
-        {% if game.is_winner(game.team_2) %} style="color:green" 
-        {% elif game.is_looser(game.team_2) %} style="color:red" 
-        {% endif %}
-      >
-        {{ game.team_2.name }}
-      </span>
-    </div>
-    {%endif%}
   </body>
 </html>
