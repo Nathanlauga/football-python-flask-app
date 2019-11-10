@@ -1,0 +1,11 @@
+body::after {
+    content: "";
+    background: url("/static/img/football_background_pattern.png") center center repeat;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
