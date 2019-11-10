@@ -1,0 +1,23 @@
+{% from 'index/game/flag.html' import flag%}
+{% from 'index/game/team.html' import team with context%}
+
+<div class="flex container items-center mb-6 text-center">
+    <div class="w-5/12">
+        <div class="h-full float-right flex items-center">
+            {{ flag(teams[game.team_1.name]) }}
+            {{ team(team=game.team_1) }}
+        </div>
+    </div>
+    <div class="w-1/12 sm:text-2xl">
+        <span>{{ game.result[0] }}</span>
+    </div>
+    <div class="w-1/12 sm:text-2xl">
+        <span>{{ game.result[1] }}</span>
+    </div>
+    <div class="w-5/12">
+        <div class="h-full float-left flex items-center">
+            {{ team(team=game.team_2) }}
+            {{ flag(teams[game.team_2.name]) }}
+        </div>
+    </div>
+</div>

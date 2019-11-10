@@ -1,123 +1,17 @@
 <html>
   <head>
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"/>
   </head>
   <body class="font-mono">
     <div class="flex h-screen bg-grey content-center">
-      <div
-        class="container mx-auto m-auto text-center border border-gray-500 rounded "
-      >
+      <div class="container mx-auto m-auto text-center border border-gray-500 rounded">
         <h1 class="uppercase text-bold mt-3 text-xl">
           International football game predictor
         </h1>
-        <form action="/" method="POST" class="py-5">
-          <div class="md:flex md:items-center mb-6">
-            <div class="md:w-1/4"></div>
-            <div class="md:w-1/4  text-right m-6">
-              <label
-                class="block  uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="team"
-              >
-                Team 1
-              </label>
-              <div class="relative">
-                <select
-                  name="team"
-                  id="team"
-                  class="block appearance-none text-right w-full bg-gray-200 border border-gray-200 text-gray-700 p-5 py-3 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                >
-                  <option selected="selected">Choose a country</option>
-                  {%for team, img_path in teams.iteritems()%} {%if game is
-                  defined %} {%if game.team_1.name == team %}
-                  <option value="{{ team }}" selected="selected">{{
-                    team
-                  }}</option>
-                  {%else%}
-                  <option value="{{ team }}"> {{ team }}</option>
-                  {%endif%} {%else%}
-                  <option value="{{ team }}"> {{ team }}</option>
-                  {%endif%} {%endfor%}
-                </select>
-              </div>
-            </div>
-            <div class="md:w-1/4 text-left m-6">
-              <label
-                class="block  uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="opponent"
-              >
-                Team 2
-              </label>
-              <div class="relative">
-                <select
-                  name="opponent"
-                  id="opponent"
-                  class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 p-5 py-3 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                >
-                  <option selected="selected">Choose a country</option>
-                  {%for team, img_path in teams.iteritems()%} {%if game is
-                  defined %} {%if game.team_2.name == team %}
-                  <option value="{{ team }}" selected="selected">{{
-                    team
-                  }}</option>
-                  {%else%}
-                  <option value="{{ team }}"> {{ team }}</option>
-                  {%endif%} {%else%}
-                  <option value="{{ team }}"> {{ team }}</option>
-                  {%endif%} {%endfor%}
-                </select>
-              </div>
-            </div>
+        {% include 'index/form.html' %}
 
-            <div class="md:w-1/4"></div>
-          </div>
-          <div class="text-center">
-            <button
-              class="bg-transparent hover:bg-gray-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent rounded"
-              type="submit"
-            >
-              And the winner is...
-            </button>
-          </div>
-        </form>
         {%if game is defined %}
-        <div class="flex container items-center mb-6 text-center">
-          <div class="md:w-1/4"></div>
-          <div class="w-5/12 md:w-1/6 md:flex md:items-center">
-            <div class="block md:w-1/2">
-              <img src="/static/img/{{ teams[game.team_1.name] }}" class="h-24 float-right w-full"/>
-            </div>
-            <div class="block md:w:1/2 text-center p-5">
-              <span class="sm:w-full" 
-                {%if game.is_winner(game.team_1)%} style="color:green"
-                {%elif game.is_looser(game.team_1) %} style="color:red"
-                {%endif%}>
-                {{ game.team_1.name }}
-              </span>
-            </div>
-          </div>
-          <div class="w-1/12">
-            <span>{{ game.result[0] }}</span>
-          </div>
-          <div class="w-1/12">
-            <span>{{ game.result[1] }}</span>
-          </div>
-          <div class="w-5/12 md:w-1/6 md:flex md:items-center">
-            <div class="block md:w:1/2 text-center p-5">
-              <span class="w-full" 
-                {%if game.is_winner(game.team_2)%} style="color:green"
-                {%elif game.is_looser(game.team_2) %} style="color:red"
-                {%endif%}>
-                {{ game.team_2.name }}
-              </span>
-            </div>
-            <div class="block md:w-1/2">
-              <img src="/static/img/{{ teams[game.team_2.name] }}" class="h-24 float-left w-full"/>
-            </div>
-          </div>
-        </div>
+          {% include 'index/game.html' %}
         {%endif%}
       </div>
     </div>

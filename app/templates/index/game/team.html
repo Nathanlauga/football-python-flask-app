@@ -1,0 +1,14 @@
+{% macro team(team) -%}
+{% set color = ''%}
+{%if game.is_winner(team) %}
+{% set color = 'text-green-600'%}
+{%elif game.is_looser(team) %}
+{% set color = 'text-red-600'%}
+{%endif%}
+
+<div class="inline-block text-center px-3 md:text-xl lg:text-2xl">
+    <span class="w-full {{color}}">
+    {{ team.name }}
+    </span>
+</div>
+{%- endmacro %}
