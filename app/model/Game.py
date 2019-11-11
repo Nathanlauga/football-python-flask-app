@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from .Team import Team
 from .FootballModel import FootballModel
-from ..utils import array_sum_to_one, exists
+from ..utils import array_sum_to_one, exists, to_percent
 from .ResultType import ResultType
 
 
@@ -45,8 +45,15 @@ class Game:
         '''
         '''
         self.proba_team_1 = np.sum(np.tril(self.result_proba_matrix, -1))
-        self.proba_team_2 = np.sum(np.diag(self.result_proba_matrix))
-        self.proba_draw = np.sum(np.triu(self.result_proba_matrix, 1))
+        self.proba_draw = np.sum(np.diag(self.result_proba_matrix))
+        self.proba_team_2 = np.sum(np.triu(self.result_proba_matrix, 1))
+
+        self.proba_team_1 = to_percent(self.proba_team_1)
+        self.proba_draw = to_percent(self.proba_draw)
+        self.proba_team_2 = to_percent(self.proba_team_2)
+
+
+        print(self.proba_team_1)
 
         # result_proba_list = [self.proba_team_1,
         #                      self.proba_draw,
@@ -107,3 +114,6 @@ class Game:
 
         self.compute_result_proba()
         self.and_the_winner_is()
+
+        for index, proba in np.ndenumerate(self.result_proba_matrix):
+            self.result_proba_matrix[index] = to_percent(proba)

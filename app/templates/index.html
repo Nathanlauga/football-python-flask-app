@@ -1,19 +1,28 @@
 <html>
   <head>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"/>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="/static/style.css" type="text/css" />
+    <link rel="stylesheet" href="/static/style.css" type="text/css" />
   </head>
   <body class="font-mono">
-    <div class="flex h-screen bg-grey content-center">
-      <div class="container mx-auto m-auto text-center bg-white border border-gray-500 rounded lg:w-3/4 xl:w-5/12">
-        <h1 class="uppercase text-bold mt-3 text-xl">
+    <div class="flex h-screen content-center">
+      <div
+        class="container mx-auto m-auto px-3 text-center bg-white border border-gray-500 rounded lg:w-3/4 xl:w-5/12"
+      >
+        <h1 class="uppercase font-bold mt-3 text-xl md:text-3xl">
           International football game predictor
         </h1>
-        {% include 'index/form.html' %}
+        {% include 'index/form.html' %} {%if game is defined %} {% include
+        'index/game_result.html' %}
+        
+        <div class="my-3">
+          <a class="text-gray-700 font-semibold hover:text-black py-2 px-4 hover:underline" 
+          href="/game/{{ game.team_1.name }}_{{ game.team_2.name }}">See game details</a>
+        </div>
 
-        {%if game is defined %}
-          {% include 'index/game.html' %}
         {%endif%}
       </div>
     </div>

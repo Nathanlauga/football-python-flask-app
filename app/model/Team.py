@@ -14,4 +14,4 @@ class Team:
         '''
         '''
         self.proba_goals = [poisson.pmf(i, self.avg_goals) for i in range(0, max_goals+1)]
-        self.proba_goals = array_sum_to_one(self.proba_goals)
+        self.proba_goals = list(array_sum_to_one(self.proba_goals))
