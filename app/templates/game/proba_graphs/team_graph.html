@@ -1,0 +1,6 @@
+{% macro team_graph(team, id) -%}
+<div class="w-full lg:w-1/2">
+  <h3 class="uppercase font-bold text-xl">{{ team.name }}</h3>
+  <canvas id="{{id}}"></canvas>
+</div>
+{%- endmacro %}

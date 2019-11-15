@@ -4,15 +4,10 @@
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="/static/style.css" type="text/css" /> -->
   </head>
   <body class="font-mono">
-      <a href='/' class="fixed bg-blue-400 hover:bg-blue-600 text-white font-bold p-3 m-2 ml-5 rounded-full inline-flex items-center">
+    {% include 'game/home_button.html' %}
 
-          <svg class="fill-current w-6 h-6 sm:w-12 sm:h-12 " viewBox="0 0 20 20">
-							<path d="M18.121,9.88l-7.832-7.836c-0.155-0.158-0.428-0.155-0.584,0L1.842,9.913c-0.262,0.263-0.073,0.705,0.292,0.705h2.069v7.042c0,0.227,0.187,0.414,0.414,0.414h3.725c0.228,0,0.414-0.188,0.414-0.414v-3.313h2.483v3.313c0,0.227,0.187,0.414,0.413,0.414h3.726c0.229,0,0.414-0.188,0.414-0.414v-7.042h2.068h0.004C18.331,10.617,18.389,10.146,18.121,9.88 M14.963,17.245h-2.896v-3.313c0-0.229-0.186-0.415-0.414-0.415H8.342c-0.228,0-0.414,0.187-0.414,0.415v3.313H5.032v-6.628h9.931V17.245z M3.133,9.79l6.864-6.868l6.867,6.868H3.133z"></path>
-						</svg>
-          </a>
     <div class="container mx-auto m-auto p-5 text-center bg-white h-full">
       {%if game is defined %}
 
@@ -20,105 +15,21 @@
         <h1 class="uppercase font-bold text-3xl md:text-3xl">
           Game details
         </h1>
-        <div class="h-auto">
-          The most likely score for this game is :
-          <span class="font-bold"
-            >{{ game.team_1.name }} {{ game.result[0] }} - {{ game.result[1] }}
-            {{ game.team_2.name }}</span
-          >. <br />
-          This result was obtained with the number of goals scored with the
-          highest probability for both teams.
-        </div>
+        {% include 'game/description.html' %}
       </div>
 
       <div class="w-full py-2 sm:h-auto" style="min-height:30%">
-        <div class="w-full">
-          <h3 class="uppercase font-bold text-xl">
-            Possible outcome with probability
-          </h3>
-        </div>
-        <div class="sm:flex">
-          <div class="sm:w-1/3 p-2">
-            <div class="block text-center w-full flex">
-              <img
-                src="/static/img/{{ teams[game.team_1.name] }}"
-                class="h-24 w-full"
-              />
-            </div>
-            {{ game.proba_team_1 }}% chance of victory.
-          </div>
-          <div class="sm:w-1/3 p-2">
-            <div class="block text-center w-full flex">
-              <img src="/static/img/equal.svg" class="h-24 w-full" />
-            </div>
-            {{ game.proba_draw }}% chance of draw.
-          </div>
-          <div class="sm:w-1/3 p-2">
-            <div class="block text-center w-full flex">
-              <img
-                src="/static/img/{{ teams[game.team_2.name] }}"
-                class="h-24 w-full"
-              />
-            </div>
-            {{ game.proba_team_2 }}% chance of victory.
-          </div>
-        </div>
+        {% include 'game/outcome.html' %}
       </div>
       <div class="w-full py-2 lg:flex" style="min-height:50%">
-        <div class="w-full lg:w-1/2">
-          <h3 class="uppercase font-bold text-xl">{{ game.team_1.name }}</h3>
-          <canvas id="team_1_proba"></canvas>
-        </div>
-        <div class="w-full lg:w-1/2">
-          <h3 class="uppercase font-bold text-xl">{{ game.team_2.name }}</h3>
-          <canvas id="team_2_proba"></canvas>
-        </div>
+        {% include 'game/proba_graphs.html' %}
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+      <script src="/static/scripts/plotProba.js"></script>
       <script>
-        const to_percent = function(data) {
-          return data.map(e => Math.round(e*10000)/100);
-        };
-
-        const bar_plot = function(data, id) {
-          data = to_percent(data);
-          const ctx = document.getElementById(id).getContext("2d");
-          const color = id === 'team_1_proba'?'rgba(52, 152, 219,1.0)':'rgba(231, 76, 60,1.0)';
-          const chart = new Chart(ctx, {
-            type: "bar",
-            data: {
-              labels: [...Array(20).keys()],
-              datasets: [
-                {
-                  label: "Probability",
-                  backgroundColor: color,
-                  borderColor: "rgba(255, 255, 255,1.0)",
-                  data: data
-                }
-              ]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                    scaleLabel: {
-                        display: true,
-                        labelString: 'Percentage'
-                    }
-                    }],
-                    xAxes: [{
-                    scaleLabel: {
-                        display: true,
-                        labelString: 'Number of goals'
-                    }
-                    }]
-                }
-            }
-          });
-        };
-
-        bar_plot({{ game.team_1.proba_goals|safe }}, 'team_1_proba');
-        bar_plot({{ game.team_2.proba_goals|safe }}, 'team_2_proba');
+        plotProba({{ game.team_1.proba_goals|safe }}, 'team_1_proba');
+        plotProba({{ game.team_2.proba_goals|safe }}, 'team_2_proba');
       </script>
       {%else%} no game {%endif%}
     </div>

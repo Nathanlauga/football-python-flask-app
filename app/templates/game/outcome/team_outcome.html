@@ -1,0 +1,5 @@
+{% macro team_outcome(team, proba) -%}
+<div class="block text-center w-full flex">
+  <img src="/static/img/{{ teams[team.name] }}" class="h-24 w-full" />
+</div>
+{{ proba }}% chance of victory. {%- endmacro %}

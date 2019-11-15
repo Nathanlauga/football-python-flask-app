@@ -4,8 +4,8 @@
   {{ form.hidden_tag() }}
   <div class="sm:flex md:items-center mb-6">
     <div class="lg:w-1/6 xl:w-0"></div>
-    {{ select_team(team=form.team, class='text-right')}}
-    {{ select_team(team=form.opponent, class='text-left')}}
+    {{ select_team(team=form.team, class='text-right')}} {{
+    select_team(team=form.opponent, class='text-left')}}
   </div>
   <div class="text-center">
     <button

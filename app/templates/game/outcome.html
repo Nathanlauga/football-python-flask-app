@@ -1,0 +1,21 @@
+{% from 'game/outcome/team_outcome.html' import team_outcome with context%}
+
+<div class="w-full">
+  <h3 class="uppercase font-bold text-xl">
+    Possible outcome with probability
+  </h3>
+</div>
+<div class="sm:flex">
+  <div class="sm:w-1/3 p-2">
+    {{ team_outcome(team=game.team_1, proba=game.proba_team_1)}}
+  </div>
+  <div class="sm:w-1/3 p-2">
+    <div class="block text-center w-full flex">
+      <img src="/static/img/equal.svg" class="h-24 w-full" />
+    </div>
+    {{ game.proba_draw }}% chance of draw.
+  </div>
+  <div class="sm:w-1/3 p-2">
+    {{ team_outcome(team=game.team_2, proba=game.proba_team_2)}}
+  </div>
+</div>

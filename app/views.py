@@ -29,11 +29,15 @@ def game(game):
     try:
         team, opponent = game.split('_')[0:2]
         if team not in countries.index or opponent not in countries.index:
-            raise Exception('Not a valid country!')
+            raise Exception('Not a valid country')
     except:
-        return render_template("game.html")
+        return render_template("404.html")
 
     game = Game(model, team_1=team, team_2=opponent)
     game.compute_result()
 
     return render_template("game.html", game=game, teams=countries)
+
+@app.errorhandler(404) 
+def not_found(e): 
+  return render_template("404.html") 
