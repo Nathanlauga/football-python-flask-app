@@ -1,1 +1,1 @@
-from .IndexForm import IndexForm
+from .component import IndexForm

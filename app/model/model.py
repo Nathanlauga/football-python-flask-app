@@ -1,9 +1,84 @@
 import pandas as pd
 import numpy as np
-from .Team import Team
-from .FootballModel import FootballModel
-from ..utils import array_sum_to_one, exists, to_percent
-from .ResultType import ResultType
+import pickle
+from scipy.stats import poisson
+
+from ..utils import array_sum_to_one, exists, to_percent, OpenFile
+
+from enum import Enum
+
+
+class ResultType(Enum):
+    WIN_TEAM_1 = 1
+    DRAW = 2
+    WIN_TEAM_2 = 3
+
+
+class FootballModel:
+    """
+    Model that predict a game result between
+    2 internationals football teams
+    """
+
+    def __init__(self, path: str):
+        self.model = self.load_model(path)
+
+    @staticmethod
+    def load_model(path: str):
+        """
+        """
+        with OpenFile(path, 'rb') as file:
+            model = pickle.load(file)
+        return model
+
+    def predict_avg_score(self, game):
+        """
+        """
+        return self.model.predict(game).values[0]
+
+
+class Team:
+    ''' 
+    Class containing team information for a game.
+
+    Attributes
+    ----------
+    name : str
+        Full name of the team
+    avg_goals : float
+        Average number of goals 
+    proba_goals : list
+        List of scoring probability, the index correspond 
+        to the the number of goals
+
+    Methods
+    -------
+    compute_proba_goals(max_goals)
+        Given a max number of goals it computes a poisson distribution
+        based on the avg_goals attribute and as a result it gives the
+        score probability for 0 to the maximumn number of goals 
+
+    '''
+
+    def __init__(self, name: str):
+        self.name = name
+        self.avg_goals = 0
+        self.proba_goals = []
+
+    def compute_proba_goals(self, max_goals: int):
+        '''
+        Given a max number of goals it computes a poisson distribution
+        based on the avg_goals attribute and as a result it gives the
+        score probability for 0 to the maximumn number of goals 
+
+        Parameters
+        ----------
+        max_goals : int
+            the maximum number of goals 
+        '''
+        self.proba_goals = [poisson.pmf(i, self.avg_goals)
+                            for i in range(0, max_goals+1)]
+        self.proba_goals = list(array_sum_to_one(self.proba_goals))
 
 
 class Game:
@@ -51,15 +126,6 @@ class Game:
         self.proba_team_1 = to_percent(self.proba_team_1)
         self.proba_draw = to_percent(self.proba_draw)
         self.proba_team_2 = to_percent(self.proba_team_2)
-
-
-        print(self.proba_team_1)
-
-        # result_proba_list = [self.proba_team_1,
-        #                      self.proba_draw,
-        #                      self.proba_team_2]
-        # self.result_proba = array_sum_to_one(result_proba_list)
-        # del result_proba_list
 
     def set_result_attr(self, result_type: ResultType, winner, looser):
         '''
