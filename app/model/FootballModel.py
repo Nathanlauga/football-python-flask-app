@@ -5,21 +5,23 @@ from scipy.stats import poisson
 
 
 class FootballModel:
-    '''Model that predict a game result between 
+    """
+    Model that predict a game result between
     2 internationals football teams
-    '''
+    """
 
     def __init__(self, path: str):
         self.model = self.load_model(path)
 
-    def load_model(self, path: str):
-        '''
-        '''
-        model = pickle.load(open(path, 'rb'))
+    @staticmethod
+    def load_model(path: str):
+        """
+        """
+        with open(path, 'rb') as file:
+            model = pickle.load(file)
         return model
 
     def predict_avg_score(self, game):
-        '''
-        '''
-        avg_score = self.model.predict(game).values[0]
-        return avg_score
+        """
+        """
+        return self.model.predict(game).values[0]
