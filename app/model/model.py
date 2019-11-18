@@ -32,7 +32,7 @@ class FootballModel:
             unzip(path, file_name='model.zip')  
 
         with OpenFile(path+file_name, 'rb') as file:
-            model = pickle.load(file)
+            model = pickle.loads(b"".join(file))
         return model
 
     def predict_avg_score(self, game):
