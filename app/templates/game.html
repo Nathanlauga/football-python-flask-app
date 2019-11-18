@@ -1,11 +1,9 @@
 {% from 'common/h1.html' import h1 %} 
+{% from 'common/head.html' import head %}
 
 <html>
   <head>
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+      {{ head(title='Game details') }}
   </head>
   <body class="font-mono">
     {% include 'game/home_button.html' %}

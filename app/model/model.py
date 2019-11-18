@@ -2,8 +2,9 @@ import pandas as pd
 import numpy as np
 import pickle
 from scipy.stats import poisson
+import os.path
 
-from ..utils import array_sum_to_one, exists, to_percent, OpenFile
+from ..utils import array_sum_to_one, exists, to_percent, OpenFile, unzip
 
 from enum import Enum
 
@@ -20,14 +21,17 @@ class FootballModel:
     2 internationals football teams
     """
 
-    def __init__(self, path: str):
-        self.model = self.load_model(path)
+    def __init__(self, path: str, file_name: str):
+        self.model = self.load_model(path, file_name)
 
     @staticmethod
-    def load_model(path: str):
+    def load_model(path: str, file_name: str):
         """
         """
-        with OpenFile(path, 'rb') as file:
+        if not os.path.exists(path+file_name):
+            unzip(path, file_name='model.zip')  
+
+        with OpenFile(path+file_name, 'rb') as file:
             model = pickle.load(file)
         return model
 
