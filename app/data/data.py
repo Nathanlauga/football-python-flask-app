@@ -36,3 +36,20 @@ def load_results(path: str):
     """
     return pd.read_csv(path+'results.csv')
 
+
+def load_predictions(path: str):
+    """
+    Load the file 'results_pred.csv' that contains all predictions for 
+    international games since the beginning of this model
+
+    Parameters
+    ----------
+    path : str
+        path to the directory which contains the csv file
+
+    Returns
+    -------
+    pd.DataFrame
+        all prediction for international games since 2019-11-14
+    """
+    return pd.read_csv(path+'results_pred.csv')

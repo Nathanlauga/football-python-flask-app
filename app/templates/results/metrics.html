@@ -1,0 +1,21 @@
+{% from 'results/metrics/kpi.html' import kpi %}
+
+<div class="sm:flex my-6">
+  <div class="flex sm:flex-none sm:w-1/2">
+    {{ kpi(metric=stats.nb_games, desc='games played')}}
+    {{ kpi(metric=stats.nb_good_pred_on_score, desc='good predictions based on score*')}}
+  </div>
+  <div class="flex sm:flex-none sm:w-1/2">
+    {{ kpi(metric=stats.nb_good_pred_on_proba, desc='good predictions based on probability**')}}
+    {{ kpi(metric=stats.nb_same_score, desc='exact scores found')}}
+  </div>
+</div>
+<div class="w-full mb-4 text-left  text-xs sm:text-md">
+  <div class="italic">
+    * e.g. if a game score prediction is 1-1 then the result is draw.
+  </div>
+  <div class="italic">
+    ** e.g. if the maximum probability is for the first team then the result is
+    the first team.
+  </div>
+</div>

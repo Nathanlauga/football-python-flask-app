@@ -1,0 +1,41 @@
+{% from 'results/games/team.html' import team with context %} 
+{% from 'results/games/score.html' import score %} 
+{% from 'results/games/proba.html' import proba %} 
+
+{% for date in dates %}
+<div class="text-xl md:text-3xl border-2 border-gray-600">{{date}}</div>
+
+{% for index, game in stats.games[stats.games.date == date].iterrows() %}
+<div class="block my-4 border-b-2 border-gray-300">
+  <div class="md:flex w-full content-center text-center my-3">
+    <div class="flex md:w-4/5">
+      <div class="w-1/6 md:w-1/4">
+        {{ team(team=game.team_1) }}
+      </div>
+      <div class="w-2/3 md:w-1/2 md:flex m-auto">
+        <div class="w-full md:w-1/2 md:text-left">
+          {{ score(name='Real score', score_1=game.team_1_score ,
+          score_2=game.team_2_score) }}
+        </div>
+        <div class="w-full md:w-1/2 md:text-right">
+          {{ score(name='Prediction', score_1=game.team_1_score_pred ,
+          score_2=game.team_2_score_pred) }}
+        </div>
+      </div>
+      <div class="w-1/6 md:w-1/4">
+        {{ team(team=game.team_2) }}
+      </div>
+    </div>
+    <div class="w-full md:w-1/5 text-left text-xs sm:text-base mt-5 md:m-auto">
+      <div class="italic inline-block">Probability :</div>
+      <div class="md:block md:flex inline-block">
+        <div class="w-full md:text-sm">
+            {{ proba(proba=game.team_1_proba, name=game.team_1) }}
+            {{ proba(proba=game.draw_proba, name='draw') }}
+            {{ proba(proba=game.team_2_proba, name=game.team_2) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %} {% endfor %}

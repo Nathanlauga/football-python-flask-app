@@ -1,0 +1,6 @@
+{% macro team(team) -%}
+<div class="block text-center w-full flex">
+  <img src="/static/img/{{ teams[team] }}" class="h-24 w-full" />
+</div>
+<span class="text-xs md:text-lg">{{team}}</span>
+{%- endmacro %}

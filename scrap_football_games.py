@@ -97,5 +97,5 @@ while date != min_date:
     i += 1
     date = get_date(i)
 
-data = pd.DataFrame(df, columns=['home_team','home_team_score','away_team_score','away_team','date'])
+data = pd.DataFrame(df, columns=['team_1','team_1_score','team_2_score','team_2','date'])
 data.to_csv('app/data/results.csv',index=False)

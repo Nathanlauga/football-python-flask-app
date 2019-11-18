@@ -185,17 +185,51 @@ class Game:
         for index, proba in np.ndenumerate(self.result_proba_matrix):
             self.result_proba_matrix[index] = to_percent(proba)
 
-class GameComparator:
+
+class ModelPerformance:
+    """
+    This class 
     """
 
-    """
+    def __init__(self, real_games: pd.DataFrame, pred_games: pd.DataFrame):
+        self.games = real_games.merge(
+            pred_games, on=['team_1', 'team_2', 'date'], suffixes=('', '_pred'))
 
-    def __init__(self, real_game: pd.Series, pred_game: pd.Series):
-        self.real_game = real_game
-        self.pred_game = pred_game
+        self.compute_game_result_detail()
+        self.compute_global_stats()
 
-    
-    def compare(self):
+    def compute_game_result_detail(self):
         """
 
         """
+        team_1_wins = self.games.team_1_score > self.games.team_2_score
+        team_2_wins = self.games.team_1_score < self.games.team_2_score
+        self.games['winner'] = np.where(team_1_wins, self.games['team_1'],
+                                        np.where(team_2_wins, self.games['team_2'], 'draw'))
+
+        team_2_wins_score = self.games.team_1_score_pred < self.games.team_2_score_pred
+        team_1_wins_score = self.games.team_1_score_pred > self.games.team_2_score_pred
+        self.games['winner_on_score'] = np.where(team_1_wins_score, self.games['team_1'],
+                                                 np.where(team_2_wins_score, self.games['team_2'], 'draw'))
+
+        team_1_wins_proba = (self.games.team_1_proba > self.games.team_2_proba) & (
+            self.games.team_1_proba > self.games.draw_proba)
+        team_2_wins_proba = (self.games.team_2_proba > self.games.team_1_proba) & (
+            self.games.team_2_proba > self.games.draw_proba)
+        self.games['winner_on_proba'] = np.where(team_1_wins_proba, self.games['team_1'],
+                                                 np.where(team_2_wins_proba, self.games['team_2'], 'draw'))
+
+        same_score = (self.games.team_1_score == self.games.team_1_score_pred) & (
+            self.games.team_2_score == self.games.team_2_score_pred)
+        self.games['same_score'] = same_score
+
+    def compute_global_stats(self):
+        """
+
+        """
+        self.nb_same_score = sum(self.games['same_score'])
+        self.nb_good_pred_on_score = sum(
+            self.games['winner'] == self.games['winner_on_score'])
+        self.nb_good_pred_on_proba = sum(
+            self.games['winner'] == self.games['winner_on_proba'])
+        self.nb_games = len(self.games)

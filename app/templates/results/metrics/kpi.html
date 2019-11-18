@@ -1,0 +1,10 @@
+{% macro kpi(metric, desc) -%}
+<div class="flex sm:block text-center w-1/2 p-3 text-4xl sm:text-5xl">
+  <div class="w-1/2 sm:w-auto">{{metric}}</div>
+  <div
+    class="w-1/2 sm:w-auto text-left sm:text-center m-auto sm:m-0 content-center text-xs lg:text-base"
+  >
+    <span>{{desc}}</span>
+  </div>
+</div>
+{%- endmacro %}

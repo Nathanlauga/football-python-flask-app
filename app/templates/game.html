@@ -1,3 +1,5 @@
+{% from 'common/h1.html' import h1 %} 
+
 <html>
   <head>
     <link
@@ -12,9 +14,7 @@
       {%if game is defined %}
 
       <div class="w-full py-2 mb-5" style="min-height:20%">
-        <h1 class="uppercase font-bold text-3xl md:text-3xl">
-          Game details
-        </h1>
+          {{ h1(text='Game details')}}
         {% include 'game/description.html' %}
       </div>
 
