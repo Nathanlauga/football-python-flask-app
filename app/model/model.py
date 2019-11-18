@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
-import pickle
+# import pickle
+import statsmodels.api as sm
 from scipy.stats import poisson
 import os.path
 
@@ -32,7 +33,7 @@ class FootballModel:
             unzip(path, file_name='model.zip')  
 
         with OpenFile(path+file_name, 'rb') as file:
-            model = pickle.loads(b"".join(file))
+            model = sm.load(file)
         return model
 
     def predict_avg_score(self, game):
