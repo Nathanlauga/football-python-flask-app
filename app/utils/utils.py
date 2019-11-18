@@ -107,3 +107,4 @@ def unzip(path: str, file_name: str):
     """
     with zipfile.ZipFile(path+file_name, 'r') as zip_ref:
         zip_ref.extractall(path)
+        zip_ref.close()
