@@ -1,0 +1,10 @@
+{% macro score(name, score_1, score_2) -%}
+<div class="italic">{{ name }}</div>
+<div class="block">
+  <div class="w-full md:text-2xl">
+    <span>[{{ score_1 }}]</span>
+    <span> - </span>
+    <span>[{{ score_2 }}]</span>
+  </div>
+</div>
+{%- endmacro %}

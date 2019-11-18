@@ -1,3 +1,5 @@
+{% from 'common/h1.html' import h1 %}
+
 <html>
   <head>
     <link
@@ -25,8 +27,26 @@
         </div>
         {% include 'index/form.html' %} {%if game is defined %} {% include
         'index/game_result.html' %} {% include 'index/details.html' %} {%endif%}
+
+        <div class="mt-12 mb-2 sm:flex">
+            <div class="block sm:w-1/2 sm:text-left">
+              <a
+                href="{{ url_for('results') }}"
+                class="text-black font-bold hover:underline"
+                >[Check out the performance]</a
+              >
+            </div>
+            <div class="block sm:w-1/2 sm:text-right">
+              <a
+                href="https://www.kaggle.com/nathanlauga/which-team-will-win-the-2018-fifa-world-cup"
+                class="text-black font-bold hover:underline"
+                target="_blank"
+                >[origin of the AI]</a
+              >
+            </div>
+        </div>
       </div>
     </div>
-    <script src='/static/scripts/randomGame.js'></script>
+    <script src="/static/scripts/randomGame.js"></script>
   </body>
 </html>
