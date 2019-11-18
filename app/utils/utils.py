@@ -1,5 +1,5 @@
 import numpy as np
-
+import zipfile
 
 def array_sum_to_one(array: list):
     """
@@ -99,3 +99,11 @@ class OpenFile:
 
     def __exit__(self, type, value, traceback):
         self.file.close()
+
+
+def unzip(path: str, file_name: str):
+    """
+
+    """
+    with zipfile.ZipFile(path+file_name, 'r') as zip_ref:
+        zip_ref.extractall(path)

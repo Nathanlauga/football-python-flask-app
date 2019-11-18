@@ -4,4 +4,4 @@ from .model import ModelPerformance
 from .model import Team
 from app import app
 
-model = FootballModel('app/model/'+app.config['MODEL_FILE'])
+model = FootballModel(path='app/model/', file_name=app.config['MODEL_FILE'])
