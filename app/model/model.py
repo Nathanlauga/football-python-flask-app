@@ -71,7 +71,7 @@ class Team:
         based on the avg_goals attribute and as a result it gives the
         score probability for 0 to the maximumn number of goals 
 
-        Parameters
+        Parametershome
         ----------
         max_goals : int
             the maximum number of goals 
@@ -90,6 +90,7 @@ class Game:
         self.team_2 = Team(name=team_2)
         self.model = model
         self.max_goals = max_goals
+        self.compute_result()
 
     def format_game(self, team_1: Team, team_2: Team):
         '''
@@ -183,3 +184,18 @@ class Game:
 
         for index, proba in np.ndenumerate(self.result_proba_matrix):
             self.result_proba_matrix[index] = to_percent(proba)
+
+class GameComparator:
+    """
+
+    """
+
+    def __init__(self, real_game: pd.Series, pred_game: pd.Series):
+        self.real_game = real_game
+        self.pred_game = pred_game
+
+    
+    def compare(self):
+        """
+
+        """
