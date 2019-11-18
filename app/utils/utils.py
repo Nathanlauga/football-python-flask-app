@@ -101,10 +101,33 @@ class OpenFile:
         self.file.close()
 
 
+class UnzipFile:
+    """
+    Class that open a file and close it at the end
+
+    Attributes
+    ----------
+    filename : str
+        file name
+    mode : str
+        mode for open() method
+    """
+    def __init__(self, filename: str, mode='r'):
+        self.filename = filename
+        self.mode = mode
+
+    def __enter__(self):
+        self.file = zipfile.ZipFile(self.filename, self.mode)
+        return self.file
+
+    def __exit__(self, type, value, traceback):
+        self.file.close()
+
+
 def unzip(path: str, file_name: str):
     """
 
     """
-    with zipfile.ZipFile(path+file_name, 'r') as zip_ref:
+    with UnzipFile(path+file_name, 'r') as zip_ref:
         zip_ref.extractall(path)
-        zip_ref.close()
+    zip_ref.close()

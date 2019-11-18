@@ -35,7 +35,8 @@ class FootballModel:
         print('load begin')
         with OpenFile(path+file_name, 'rb') as file:
             model = pickle.loads(b"".join(file))
-            print('load over')
+        file.close()
+        print('load over')
         return model
 
     def predict_avg_score(self, game):
