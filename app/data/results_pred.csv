@@ -1,33 +1,41 @@
 team_1,team_1_score,team_2_score,team_2,date,team_1_proba,draw_proba,team_2_proba
-Bulgaria,1,1,Czech Republic,17-11-2019,24.46,24.35,51.19
-Kosovo,0,3,England,17-11-2019,0.86,5.5,93.64
-Serbia,1,1,Ukraine,17-11-2019,35.44,28.8,35.76
-Luxembourg,0,3,Portugal,17-11-2019,1.26,5.09,93.65
-Andorra,0,3,Turkey,17-11-2019,1.04,6.23,92.74
-Moldova,0,1,Iceland,17-11-2019,11.14,20.15,68.71
-Albania,0,1,France,17-11-2019,8.26,19.96,71.78
-Germany,3,0,Belarus,16-11-2019,87.58,8.88,3.55
-Northern Ireland,0,1,Netherlands,16-11-2019,14.65,23.62,61.73
-Azerbaijan,0,1,Wales,16-11-2019,11.24,22.35,66.41
-Croatia,1,0,Slovakia,16-11-2019,51.35,27.58,21.07
-Slovenia,1,0,Latvia,16-11-2019,56.25,25.8,17.94
-Austria,1,0,Macedonia,16-11-2019,59.66,22.12,18.22
-Israel,1,2,Poland,16-11-2019,17.08,20.0,62.92
-Cyprus,0,2,Scotland,16-11-2019,9.54,16.9,73.56
-Russia,1,1,Belgium,16-11-2019,36.2,27.25,36.55
-San Marino,0,2,Kazakhstan,16-11-2019,2.33,11.19,86.48
-Denmark,6,0,Gibraltar,15-11-2019,99.72,0.24,0.03
-Switzerland,1,0,Georgia,15-11-2019,61.59,23.48,14.93
-Norway,2,0,Faroe Islands,15-11-2019,78.04,15.78,6.17
-Romania,0,1,Sweden,15-11-2019,26.74,27.4,45.87
-Spain,4,0,Malta,15-11-2019,97.12,2.47,0.41
-Armenia,0,1,Greece,15-11-2019,21.36,26.17,52.47
-Finland,2,0,Liechtenstein,15-11-2019,82.17,13.8,4.03
-Bosnia-Herzegovina,0,1,Italy,15-11-2019,15.98,22.28,61.74
-England,1,0,Montenegro,14-11-2019,67.97,20.48,11.54
-Czech Republic,2,0,Kosovo,14-11-2019,86.22,11.01,2.77
-Portugal,2,0,Lithuania,14-11-2019,84.72,11.51,3.77
-Serbia,3,0,Luxembourg,14-11-2019,88.23,8.64,3.13
-Turkey,1,1,Iceland,14-11-2019,42.28,26.06,31.66
-Albania,1,0,Andorra,14-11-2019,79.08,17.4,3.52
-France,2,0,Moldova,14-11-2019,87.25,9.97,2.78
+Gibraltar,0,5,Switzerland,18-11-2019,0.1,0.64,99.26
+Ireland,0,1,Denmark,18-11-2019,27.37,27.73,44.9
+Malta,0,2,Norway,18-11-2019,4.82,13.89,81.29
+Spain,1,0,Romania,18-11-2019,61.58,23.2,15.21
+Sweden,3,0,Faroe Islands,18-11-2019,90.63,7.36,2.0
+Greece,1,0,Finland,18-11-2019,45.18,28.89,25.93
+Italy,2,0,Armenia,18-11-2019,76.24,16.32,7.45
+Liechtenstein,0,3,Bosnia-Herzegovina,18-11-2019,1.87,6.77,91.36
+Bulgaria,1,1,Czech Republic,17-11-2019,24.18,24.4,51.42
+Kosovo,0,3,England,17-11-2019,0.77,5.07,94.15
+Serbia,1,1,Ukraine,17-11-2019,35.1,28.85,36.05
+Luxembourg,0,3,Portugal,17-11-2019,1.25,5.1,93.65
+Andorra,0,3,Turkey,17-11-2019,1.04,6.15,92.81
+Moldova,0,1,Iceland,17-11-2019,12.5,21.11,66.39
+Albania,0,1,France,17-11-2019,7.94,19.3,72.76
+Germany,3,0,Belarus,16-11-2019,86.76,9.38,3.86
+Northern Ireland,0,1,Netherlands,16-11-2019,13.6,22.79,63.61
+Azerbaijan,0,1,Wales,16-11-2019,11.31,22.41,66.28
+Croatia,1,0,Slovakia,16-11-2019,51.64,27.26,21.11
+Slovenia,1,0,Latvia,16-11-2019,55.48,25.81,18.71
+Austria,1,0,Macedonia,16-11-2019,61.12,21.56,17.31
+Israel,1,2,Poland,16-11-2019,18.16,20.64,61.2
+Cyprus,0,2,Scotland,16-11-2019,9.66,16.99,73.35
+Russia,1,1,Belgium,16-11-2019,37.67,27.39,34.94
+San Marino,0,2,Kazakhstan,16-11-2019,2.27,11.1,86.63
+Denmark,6,0,Gibraltar,15-11-2019,99.7,0.27,0.03
+Switzerland,1,0,Georgia,15-11-2019,61.19,23.42,15.39
+Norway,2,0,Faroe Islands,15-11-2019,78.55,15.42,6.04
+Romania,1,1,Sweden,15-11-2019,27.82,27.38,44.8
+Spain,4,0,Malta,15-11-2019,96.97,2.59,0.45
+Armenia,0,1,Greece,15-11-2019,21.36,26.27,52.36
+Finland,2,0,Liechtenstein,15-11-2019,81.18,14.32,4.5
+Bosnia-Herzegovina,0,1,Italy,15-11-2019,16.03,22.32,61.65
+England,1,0,Montenegro,14-11-2019,68.93,20.07,11.0
+Czech Republic,2,0,Kosovo,14-11-2019,87.39,10.18,2.44
+Portugal,2,0,Lithuania,14-11-2019,82.69,12.8,4.51
+Serbia,3,0,Luxembourg,14-11-2019,88.5,8.51,2.99
+Turkey,1,1,Iceland,14-11-2019,44.14,25.88,29.98
+Albania,1,0,Andorra,14-11-2019,78.87,17.46,3.67
+France,2,0,Moldova,14-11-2019,87.05,10.05,2.89

@@ -29,14 +29,11 @@ class FootballModel:
         """
         """
         if not os.path.exists(path+file_name):
-            print('unzip begin')
             unzip(path, file_name='model.zip')  
 
-        print('load begin')
         with OpenFile(path+file_name, 'rb') as file:
             model = pickle.loads(b"".join(file))
         file.close()
-        print('load over')
         return model
 
     def predict_avg_score(self, game):

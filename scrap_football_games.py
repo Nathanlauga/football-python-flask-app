@@ -1,4 +1,3 @@
-from difflib import SequenceMatcher
 import numpy as numpy
 import pandas as pd
 import requests
@@ -10,37 +9,8 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-def similar(a, b):
-    return SequenceMatcher(None, a, b).ratio()
-
-
-def find_best_match(a, str_list):
-    best_match, best_score = '', 0
-    for elem in str_list:
-        if any_word_same(a, elem):
-            return elem
-
-        score = similar(a.replace(' ', ''),
-                        elem[4:-4].replace('-', ' ').replace(' ', ''))
-        if best_score < score:
-            best_match, best_score = elem, score
-    return best_match
-
-
 countries = pd.read_json('./app/data/'+'countries.json',
                          orient='index', typ='series')
-
-
-def get_dupplicated_word():
-    dup_word = pd.Series(
-        [word for country in countries.index for word in country.split()]).value_counts()
-    return list(dup_word[dup_word > 1].index.values) + ['North']
-
-
-def any_word_same(first, second):
-    dup_words = get_dupplicated_word()
-    return any([f_word.upper() == s_word.upper() and f_word not in dup_words for s_word in second.split() for f_word in first.split()])
-
 
 def get_date(days: int):
     date = datetime.date.today() - datetime.timedelta(days=days)
@@ -62,6 +32,8 @@ i = 1
 date = get_date(i)
 min_date = '13-11-2019'
 df = []
+
+synonyms = pd.read_json('app/data/synonyms.json', orient='index', typ='series')
 
 while date != min_date:
     url = 'https://livescore.football365.com/football/all/'+date
@@ -88,9 +60,9 @@ while date != min_date:
 
     for game in games:
         if game[0] not in countries.index:
-            game[0] = find_best_match(game[0], countries.index)
+            game[0] = synonyms[game[0]]
         if game[3] not in countries.index:
-            game[3] = find_best_match(game[3], countries.index)
+            game[3] = synonyms[game[3]]
 
     df += games
 

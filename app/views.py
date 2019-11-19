@@ -12,8 +12,8 @@ from app import app
 def predict_score_new_games(results):
     data = pd.read_csv('app/data/results_pred.csv')
 
-    max_date = max(data['date']) if len(data) > 0 else '13-11-2019'
-    results = results[results['date'] > max_date]
+    # max_date = max(data['date']) if len(data) > 0 else '13-11-2019'
+    # results = results[results['date'] > max_date]
     pred_df = []
     if len(results) > 0:
         for index, row in results.iterrows():
