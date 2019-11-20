@@ -1,41 +1,165 @@
-team_1,team_1_score,team_2_score,team_2,date,team_1_proba,draw_proba,team_2_proba
-Gibraltar,0,5,Switzerland,18-11-2019,0.1,0.64,99.26
-Ireland,0,1,Denmark,18-11-2019,27.37,27.73,44.9
-Malta,0,2,Norway,18-11-2019,4.82,13.89,81.29
-Spain,1,0,Romania,18-11-2019,61.58,23.2,15.21
-Sweden,3,0,Faroe Islands,18-11-2019,90.63,7.36,2.0
-Greece,1,0,Finland,18-11-2019,45.18,28.89,25.93
-Italy,2,0,Armenia,18-11-2019,76.24,16.32,7.45
-Liechtenstein,0,3,Bosnia-Herzegovina,18-11-2019,1.87,6.77,91.36
-Bulgaria,1,1,Czech Republic,17-11-2019,24.18,24.4,51.42
-Kosovo,0,3,England,17-11-2019,0.77,5.07,94.15
-Serbia,1,1,Ukraine,17-11-2019,35.1,28.85,36.05
-Luxembourg,0,3,Portugal,17-11-2019,1.25,5.1,93.65
-Andorra,0,3,Turkey,17-11-2019,1.04,6.15,92.81
-Moldova,0,1,Iceland,17-11-2019,12.5,21.11,66.39
-Albania,0,1,France,17-11-2019,7.94,19.3,72.76
-Germany,3,0,Belarus,16-11-2019,86.76,9.38,3.86
-Northern Ireland,0,1,Netherlands,16-11-2019,13.6,22.79,63.61
-Azerbaijan,0,1,Wales,16-11-2019,11.31,22.41,66.28
-Croatia,1,0,Slovakia,16-11-2019,51.64,27.26,21.11
-Slovenia,1,0,Latvia,16-11-2019,55.48,25.81,18.71
-Austria,1,0,Macedonia,16-11-2019,61.12,21.56,17.31
-Israel,1,2,Poland,16-11-2019,18.16,20.64,61.2
-Cyprus,0,2,Scotland,16-11-2019,9.66,16.99,73.35
-Russia,1,1,Belgium,16-11-2019,37.67,27.39,34.94
-San Marino,0,2,Kazakhstan,16-11-2019,2.27,11.1,86.63
-Denmark,6,0,Gibraltar,15-11-2019,99.7,0.27,0.03
-Switzerland,1,0,Georgia,15-11-2019,61.19,23.42,15.39
-Norway,2,0,Faroe Islands,15-11-2019,78.55,15.42,6.04
-Romania,1,1,Sweden,15-11-2019,27.82,27.38,44.8
-Spain,4,0,Malta,15-11-2019,96.97,2.59,0.45
-Armenia,0,1,Greece,15-11-2019,21.36,26.27,52.36
-Finland,2,0,Liechtenstein,15-11-2019,81.18,14.32,4.5
-Bosnia-Herzegovina,0,1,Italy,15-11-2019,16.03,22.32,61.65
-England,1,0,Montenegro,14-11-2019,68.93,20.07,11.0
-Czech Republic,2,0,Kosovo,14-11-2019,87.39,10.18,2.44
-Portugal,2,0,Lithuania,14-11-2019,82.69,12.8,4.51
-Serbia,3,0,Luxembourg,14-11-2019,88.5,8.51,2.99
-Turkey,1,1,Iceland,14-11-2019,44.14,25.88,29.98
-Albania,1,0,Andorra,14-11-2019,78.87,17.46,3.67
-France,2,0,Moldova,14-11-2019,87.05,10.05,2.89
+competition,date,draw_proba,team_1,team_1_proba,team_1_score,team_2,team_2_proba,team_2_score
+International - European Championship Qualification Group C,19-11-2019,18.3,Germany,71.98,2,Northern Ireland,9.72,0
+International - European Championship Qualification Group C,19-11-2019,8.77,Netherlands,88.34,3,Estonia,2.89,0
+International - European Championship Qualification Group E,19-11-2019,19.94,Slovakia,69.71,1,Azerbaijan,10.34,0
+International - European Championship Qualification Group E,19-11-2019,26.46,Wales,39.61,1,Hungary,33.93,1
+International - European Championship Qualification Group G,19-11-2019,25.91,Macedonia,29.35,1,Israel,44.74,1
+International - European Championship Qualification Group G,19-11-2019,19.58,Latvia,13.06,0,Austria,67.36,2
+International - European Championship Qualification Group G,19-11-2019,24.73,Poland,51.97,1,Slovenia,23.3,1
+International - European Championship Qualification Group I,19-11-2019,10.77,Belgium,84.05,2,Cyprus,5.18,0
+International - European Championship Qualification Group I,19-11-2019,0.62,San Marino,0.05,0,Russia,99.33,5
+International - European Championship Qualification Group I,19-11-2019,17.2,Scotland,74.07,2,Kazakhstan,8.74,0
+International - Africa Cup of Nations Qualification Group E,19-11-2019,20.74,Burundi,7.88,0,Morocco,71.38,1
+International - Africa Cup of Nations Qualification Group E,19-11-2019,25.31,Mauritania,28.84,1,Central African Republic,45.85,1
+International - Africa Cup of Nations Qualification Group H,19-11-2019,28.32,Zambia,43.29,1,Zimbabwe,28.39,0
+International - Africa Cup of Nations Qualification Group J,19-11-2019,29.13,Libya,50.77,1,Tanzania,20.1,0
+International - Africa Cup of Nations Qualification Group J,19-11-2019,20.18,Equatorial Guinea,10.63,0,Tunisia,69.19,1
+International - Africa Cup of Nations Qualification Group K,19-11-2019,11.81,Ethiopia,6.42,0,Ivory Coast,81.76,2
+International - Africa Cup of Nations Qualification Group K,19-11-2019,29.59,Niger,29.46,0,Madagascar,40.94,1
+International - CONCACAF Nations League B Group 2,19-11-2019,14.83,El Salvador,76.61,2,Dominican Republic,8.57,0
+International - CONCACAF Nations League B Group 2,19-11-2019,4.68,St. Lucia,92.52,4,Montserrat,2.8,1
+International - CONCACAF Nations League B Group 3,19-11-2019,18.81,Aruba,18.31,1,Antigua and Barbuda,62.88,2
+International - CONCACAF Nations League B Group 3,19-11-2019,16.7,Jamaica,74.53,2,Guyana,8.77,0
+International - CONCACAF Nations League B Group 4,19-11-2019,25.41,Nicaragua,30.51,1,Suriname,44.08,1
+International - CONCACAF Nations League C Group 3,19-11-2019,4.17,Puerto Rico,94.39,4,Anguilla,1.44,0
+International - National Friendlies,19-11-2019,25.85,Japan,51.22,1,Venezuela,22.93,0
+International - National Friendlies,19-11-2019,17.65,Brazil,73.83,2,Korea Republic,8.53,0
+International - National Friendlies,19-11-2019,25.51,Saudi Arabia,21.57,0,Paraguay,52.91,1
+International - National Friendlies,19-11-2019,25.27,Montenegro,52.27,1,Belarus,22.46,0
+International - National Friendlies,19-11-2019,21.69,Croatia,68.09,1,Georgia,10.22,0
+International - World Cup Qualification AFC 2nd Round Group A,19-11-2019,9.74,Maldives,85.97,3,Guam,4.28,0
+International - World Cup Qualification AFC 2nd Round Group A,19-11-2019,11.96,Syria,81.74,2,Philippines,6.31,0
+International - World Cup Qualification AFC 2nd Round Group B,19-11-2019,3.01,Nepal,0.67,0,Kuwait,96.32,4
+International - World Cup Qualification AFC 2nd Round Group B,19-11-2019,5.43,Jordan,92.64,3,Taiwan,1.93,0
+International - World Cup Qualification AFC 2nd Round Group C,19-11-2019,17.14,Hong Kong,73.95,2,Cambodia,8.91,0
+International - World Cup Qualification AFC 2nd Round Group C,19-11-2019,27.19,Iraq,48.7,1,Bahrain,24.11,0
+International - World Cup Qualification AFC 2nd Round Group D,19-11-2019,22.12,Uzbekistan,62.74,1,Palestine,15.14,0
+International - World Cup Qualification AFC 2nd Round Group D,19-11-2019,30.32,Yemen,35.31,1,Singapore,34.37,1
+International - World Cup Qualification AFC 2nd Round Group E,19-11-2019,8.66,Afghanistan,3.07,0,Qatar,88.27,3
+International - World Cup Qualification AFC 2nd Round Group E,19-11-2019,20.52,Oman,68.85,1,India,10.63,0
+International - World Cup Qualification AFC 2nd Round Group F,19-11-2019,16.55,Burma,73.63,2,Mongolia,9.82,0
+International - World Cup Qualification AFC 2nd Round Group F,19-11-2019,26.61,Kyrgyzstan,33.89,1,Tajikistan,39.51,1
+International - World Cup Qualification AFC 2nd Round Group G,19-11-2019,23.31,Malaysia,26.79,1,Indonesia,49.89,1
+International - World Cup Qualification AFC 2nd Round Group G,19-11-2019,23.65,Vietnam,23.67,1,Thailand,52.68,1
+International - World Cup Qualification AFC 2nd Round Group H,19-11-2019,10.37,Turkmenistan,84.81,3,Sri Lanka,4.81,0
+International - World Cup Qualification AFC 2nd Round Group H,19-11-2019,26.36,Lebanon,29.45,1,Korea DPR,44.2,1
+International - European Championship Qualification Group D,18-11-2019,0.64,Gibraltar,0.1,0,Switzerland,99.26,5
+International - European Championship Qualification Group D,18-11-2019,27.73,Ireland,27.37,0,Denmark,44.9,1
+International - European Championship Qualification Group F,18-11-2019,13.89,Malta,4.82,0,Norway,81.29,2
+International - European Championship Qualification Group F,18-11-2019,23.2,Spain,61.58,1,Romania,15.21,0
+International - European Championship Qualification Group F,18-11-2019,7.36,Sweden,90.63,3,Faroe Islands,2.0,0
+International - European Championship Qualification Group J,18-11-2019,28.89,Greece,45.18,1,Finland,25.93,0
+International - European Championship Qualification Group J,18-11-2019,16.32,Italy,76.24,2,Armenia,7.45,0
+International - European Championship Qualification Group J,18-11-2019,6.77,Liechtenstein,1.87,0,Bosnia-Herzegovina,91.36,3
+International - Africa Cup of Nations Qualification Group C,18-11-2019,4.64,São Tomé and Príncipe,1.35,0,Ghana,94.01,3
+International - Africa Cup of Nations Qualification Group D,18-11-2019,21.3,Gambia,13.03,0,Congo DR,65.67,1
+International - Africa Cup of Nations Qualification Group F,18-11-2019,27.86,Cape Verde,47.74,1,Mozambique,24.4,0
+International - Africa Cup of Nations Qualification Group G,18-11-2019,9.47,Comoros,2.0,0,Egypt,88.53,2
+International - Africa Cup of Nations Qualification Group G,18-11-2019,30.73,Kenya,31.82,0,Togo,37.45,1
+International - Africa Cup of Nations Qualification Group H,18-11-2019,21.15,Botswana,15.46,0,Algeria,63.38,1
+International - CONCACAF Nations League A Group 3,18-11-2019,23.92,Honduras,52.45,1,Trinidad and Tobago,23.63,1
+International - CONCACAF Nations League A Group 4,18-11-2019,20.89,Costa Rica,67.53,1,Haiti,11.58,0
+International - CONCACAF Nations League B Group 1,18-11-2019,23.88,Grenada,43.54,1,Belize,32.57,1
+International - CONCACAF Nations League B Group 4,18-11-2019,16.03,Dominica,10.84,0,St. Vincent and the Grenadines,73.13,2
+International - CONCACAF Nations League C Group 4,18-11-2019,2.01,Guadeloupe,97.6,4,Turks and Caicos Islands,0.39,0
+International - National Friendlies,18-11-2019,26.33,Argentina,46.67,1,Uruguay,27.0,1
+International - European Championship Qualification Group A,17-11-2019,24.4,Bulgaria,24.18,1,Czech Republic,51.42,1
+International - European Championship Qualification Group A,17-11-2019,5.07,Kosovo,0.77,0,England,94.15,3
+International - European Championship Qualification Group B,17-11-2019,28.85,Serbia,35.1,1,Ukraine,36.05,1
+International - European Championship Qualification Group B,17-11-2019,5.1,Luxembourg,1.25,0,Portugal,93.65,3
+International - European Championship Qualification Group H,17-11-2019,6.15,Andorra,1.04,0,Turkey,92.81,3
+International - European Championship Qualification Group H,17-11-2019,21.11,Moldova,12.5,0,Iceland,66.39,1
+International - European Championship Qualification Group H,17-11-2019,19.3,Albania,7.94,0,France,72.76,1
+International - Africa Cup of Nations Qualification Group A,17-11-2019,21.68,Chad,14.33,0,Mali,63.99,1
+International - Africa Cup of Nations Qualification Group A,17-11-2019,22.11,Guinea,59.6,1,Namibia,18.29,0
+International - Africa Cup of Nations Qualification Group B,17-11-2019,30.6,Uganda,50.52,1,Malawi,18.87,0
+International - Africa Cup of Nations Qualification Group B,17-11-2019,8.14,South Sudan,2.64,0,Burkina Faso,89.23,3
+International - Africa Cup of Nations Qualification Group C,17-11-2019,25.02,South Africa,59.31,1,Sudan,15.67,0
+International - Africa Cup of Nations Qualification Group D,17-11-2019,31.79,Gabon,41.58,1,Angola,26.64,0
+International - Africa Cup of Nations Qualification Group F,17-11-2019,21.6,Rwanda,10.87,0,Cameroon,67.52,1
+International - Africa Cup of Nations Qualification Group I,17-11-2019,16.69,Swaziland,6.13,0,Senegal,77.17,2
+International - Africa Cup of Nations Qualification Group I,17-11-2019,27.21,Congo,48.66,1,Guinea-Bissau,24.13,0
+International - Africa Cup of Nations Qualification Group L,17-11-2019,27.73,Benin,35.26,1,Sierra Leone,37.01,1
+International - Africa Cup of Nations Qualification Group L,17-11-2019,15.26,Lesotho,5.79,0,Nigeria,78.95,2
+International - CONCACAF Nations League B Group 1,17-11-2019,24.38,French Guyana,52.85,1,St. Kitts and Nevis,22.77,1
+International - CONCACAF Nations League B Group 2,17-11-2019,21.62,St. Lucia,32.53,1,Dominican Republic,45.85,1
+International - CONCACAF Nations League B Group 2,17-11-2019,0.23,El Salvador,99.72,7,Montserrat,0.05,0
+International - CONCACAF Nations League C Group 1,17-11-2019,11.44,Cayman Islands,82.65,2,Virgin Islands,5.9,0
+International - CONCACAF Nations League C Group 2,17-11-2019,17.33,Bonaire,58.87,2,Bahamas,23.8,1
+International - CONCACAF Nations League C Group 3,17-11-2019,9.95,Guatemala,85.56,3,Puerto Rico,4.49,0
+International - National Friendlies,17-11-2019,32.0,Lithuania,34.78,0,New Zealand,33.22,0
+International - European Championship Qualification Group C,16-11-2019,9.38,Germany,86.76,3,Belarus,3.86,0
+International - European Championship Qualification Group C,16-11-2019,22.79,Northern Ireland,13.6,0,Netherlands,63.61,1
+International - European Championship Qualification Group E,16-11-2019,22.41,Azerbaijan,11.31,0,Wales,66.28,1
+International - European Championship Qualification Group E,16-11-2019,27.26,Croatia,51.64,1,Slovakia,21.11,0
+International - European Championship Qualification Group G,16-11-2019,25.81,Slovenia,55.48,1,Latvia,18.71,0
+International - European Championship Qualification Group G,16-11-2019,21.56,Austria,61.12,1,Macedonia,17.31,0
+International - European Championship Qualification Group G,16-11-2019,20.64,Israel,18.16,1,Poland,61.2,2
+International - European Championship Qualification Group I,16-11-2019,16.99,Cyprus,9.66,0,Scotland,73.35,2
+International - European Championship Qualification Group I,16-11-2019,27.39,Russia,37.67,1,Belgium,34.94,1
+International - European Championship Qualification Group I,16-11-2019,11.1,San Marino,2.27,0,Kazakhstan,86.63,2
+International - Africa Cup of Nations Qualification Group K,16-11-2019,25.93,Madagascar,39.46,1,Ethiopia,34.61,1
+International - Africa Cup of Nations Qualification Group K,16-11-2019,14.04,Ivory Coast,79.79,2,Niger,6.17,0
+International - CONCACAF Nations League A Group 1,16-11-2019,22.02,USA,63.15,1,Canada,14.84,0
+International - CONCACAF Nations League A Group 2,16-11-2019,23.61,Panama,15.37,0,Mexico,61.01,1
+International - CONCACAF Nations League B Group 3,16-11-2019,17.09,Antigua and Barbuda,7.85,0,Jamaica,75.06,2
+International - CONCACAF Nations League B Group 3,16-11-2019,16.08,Guyana,68.79,2,Aruba,15.13,1
+International - CONCACAF Nations League C Group 1,16-11-2019,8.14,St. Martin,2.82,0,Barbados,89.04,3
+International - National Friendlies,16-11-2019,29.2,Colombia,46.29,1,Peru,24.51,0
+International - European Championship Qualification Group D,15-11-2019,0.27,Denmark,99.7,6,Gibraltar,0.03,0
+International - European Championship Qualification Group D,15-11-2019,23.42,Switzerland,61.19,1,Georgia,15.39,0
+International - European Championship Qualification Group F,15-11-2019,15.42,Norway,78.55,2,Faroe Islands,6.04,0
+International - European Championship Qualification Group F,15-11-2019,27.38,Romania,27.82,1,Sweden,44.8,1
+International - European Championship Qualification Group F,15-11-2019,2.59,Spain,96.97,4,Malta,0.45,0
+International - European Championship Qualification Group J,15-11-2019,26.27,Armenia,21.36,0,Greece,52.36,1
+International - European Championship Qualification Group J,15-11-2019,14.32,Finland,81.18,2,Liechtenstein,4.5,0
+International - European Championship Qualification Group J,15-11-2019,22.32,Bosnia-Herzegovina,16.03,0,Italy,61.65,1
+International - Africa Cup of Nations Qualification Group E,15-11-2019,16.82,Morocco,77.01,2,Mauritania,6.18,0
+International - Africa Cup of Nations Qualification Group H,15-11-2019,26.06,Zimbabwe,48.58,1,Botswana,25.36,1
+International - Africa Cup of Nations Qualification Group J,15-11-2019,30.15,Tanzania,36.73,1,Equatorial Guinea,33.12,1
+International - Africa Cup of Nations Qualification Group J,15-11-2019,29.41,Tunisia,47.68,1,Libya,22.91,0
+International - CONCACAF Nations League A Group 3,15-11-2019,18.31,Martinique,10.91,0,Honduras,70.79,2
+International - CONCACAF Nations League A Group 4,15-11-2019,8.54,Curaçao,2.75,0,Costa Rica,88.71,3
+International - CONCACAF Nations League B Group 1,15-11-2019,22.35,Belize,18.31,0,French Guyana,59.34,1
+International - CONCACAF Nations League B Group 4,15-11-2019,25.3,St. Vincent and the Grenadines,45.69,1,Nicaragua,29.01,1
+International - CONCACAF Nations League B Group 4,15-11-2019,16.6,Suriname,71.73,2,Dominica,11.68,0
+International - CONCACAF Nations League C Group 2,15-11-2019,12.24,Bahamas,80.46,2,British Virgin Islands,7.3,0
+International - National Friendlies,15-11-2019,19.15,Trinidad and Tobago,13.92,0,Ecuador,66.92,2
+International - National Friendlies,15-11-2019,26.03,Brazil,50.14,1,Argentina,23.83,0
+International - National Friendlies,15-11-2019,21.16,Hungary,20.6,1,Uruguay,58.24,2
+International - European Championship Qualification Group A,14-11-2019,20.07,England,68.93,1,Montenegro,11.0,0
+International - European Championship Qualification Group A,14-11-2019,10.18,Czech Republic,87.39,2,Kosovo,2.44,0
+International - European Championship Qualification Group B,14-11-2019,12.8,Portugal,82.69,2,Lithuania,4.51,0
+International - European Championship Qualification Group B,14-11-2019,8.51,Serbia,88.5,3,Luxembourg,2.99,0
+International - European Championship Qualification Group H,14-11-2019,25.88,Turkey,44.14,1,Iceland,29.98,1
+International - European Championship Qualification Group H,14-11-2019,17.46,Albania,78.87,1,Andorra,3.67,0
+International - European Championship Qualification Group H,14-11-2019,10.05,France,87.05,2,Moldova,2.89,0
+International - Africa Cup of Nations Qualification Group A,14-11-2019,27.18,Mali,35.85,1,Guinea,36.97,1
+International - Africa Cup of Nations Qualification Group C,14-11-2019,29.12,Ghana,45.07,1,South Africa,25.8,0
+International - Africa Cup of Nations Qualification Group D,14-11-2019,27.9,Congo DR,43.6,1,Gabon,28.51,0
+International - Africa Cup of Nations Qualification Group F,14-11-2019,29.86,Mozambique,33.81,1,Rwanda,36.33,1
+International - Africa Cup of Nations Qualification Group G,14-11-2019,21.89,Egypt,66.67,1,Kenya,11.44,0
+International - Africa Cup of Nations Qualification Group G,14-11-2019,23.93,Togo,67.12,1,Comoros,8.96,0
+International - Africa Cup of Nations Qualification Group H,14-11-2019,27.85,Algeria,41.02,1,Zambia,31.13,1
+International - CONCACAF Nations League B Group 1,14-11-2019,24.32,St. Kitts and Nevis,38.73,1,Grenada,36.94,1
+International - CONCACAF Nations League C Group 4,14-11-2019,24.87,Turks and Caicos Islands,16.03,0,Sint Maarten,59.11,1
+International - National Friendlies,14-11-2019,25.7,Cambodia,45.5,1,Mongolia,28.8,1
+International - National Friendlies,14-11-2019,16.53,Qatar,75.84,2,Singapore,7.63,0
+International - National Friendlies,14-11-2019,19.05,Ukraine,73.35,1,Estonia,7.59,0
+International - National Friendlies,14-11-2019,24.73,Bulgaria,26.62,1,Paraguay,48.66,1
+International - National Friendlies,14-11-2019,22.29,Ireland,67.09,1,New Zealand,10.62,0
+International - World Cup Qualification AFC 2nd Round Group A,14-11-2019,20.22,Maldives,23.3,1,Philippines,56.49,2
+International - World Cup Qualification AFC 2nd Round Group A,14-11-2019,28.24,Syria,26.33,0,China,45.43,1
+International - World Cup Qualification AFC 2nd Round Group B,14-11-2019,21.36,Jordan,14.19,0,Australia,64.45,1
+International - World Cup Qualification AFC 2nd Round Group B,14-11-2019,3.29,Kuwait,95.69,4,Taiwan,1.03,0
+International - World Cup Qualification AFC 2nd Round Group C,14-11-2019,22.16,Hong Kong,12.25,0,Bahrain,65.59,1
+International - World Cup Qualification AFC 2nd Round Group C,14-11-2019,28.76,Iraq,19.29,0,Iran,51.95,1
+International - World Cup Qualification AFC 2nd Round Group D,14-11-2019,27.55,Uzbekistan,31.9,1,Saudi Arabia,40.55,1
+International - World Cup Qualification AFC 2nd Round Group D,14-11-2019,24.94,Yemen,16.91,0,Palestine,58.16,1
+International - World Cup Qualification AFC 2nd Round Group E,14-11-2019,25.21,Afghanistan,20.96,0,India,53.83,1
+International - World Cup Qualification AFC 2nd Round Group E,14-11-2019,7.23,Oman,91.07,3,Bangladesh,1.7,0
+International - World Cup Qualification AFC 2nd Round Group F,14-11-2019,22.92,Burma,22.35,1,Tajikistan,54.73,1
+International - World Cup Qualification AFC 2nd Round Group G,14-11-2019,17.63,Malaysia,13.75,0,Thailand,68.61,2
+International - World Cup Qualification AFC 2nd Round Group G,14-11-2019,18.9,Vietnam,11.49,0,United Arab Emirates,69.61,2
+International - World Cup Qualification AFC 2nd Round Group H,14-11-2019,22.4,Turkmenistan,17.63,0,Korea DPR,59.97,1
+International - World Cup Qualification AFC 2nd Round Group H,14-11-2019,18.88,Lebanon,9.89,0,Korea Republic,71.23,2

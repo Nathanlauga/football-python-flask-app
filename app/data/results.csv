@@ -1,41 +1,165 @@
-team_1,team_1_score,team_2_score,team_2,date
-Gibraltar,1,6,Switzerland,18-11-2019
-Ireland,1,1,Denmark,18-11-2019
-Malta,1,2,Norway,18-11-2019
-Spain,5,0,Romania,18-11-2019
-Sweden,3,0,Faroe Islands,18-11-2019
-Greece,2,1,Finland,18-11-2019
-Italy,9,1,Armenia,18-11-2019
-Liechtenstein,0,3,Bosnia-Herzegovina,18-11-2019
-Bulgaria,1,0,Czech Republic,17-11-2019
-Kosovo,0,4,England,17-11-2019
-Serbia,2,2,Ukraine,17-11-2019
-Luxembourg,0,2,Portugal,17-11-2019
-Andorra,0,2,Turkey,17-11-2019
-Moldova,1,2,Iceland,17-11-2019
-Albania,0,2,France,17-11-2019
-Germany,4,0,Belarus,16-11-2019
-Northern Ireland,0,0,Netherlands,16-11-2019
-Azerbaijan,0,2,Wales,16-11-2019
-Croatia,3,1,Slovakia,16-11-2019
-Slovenia,1,0,Latvia,16-11-2019
-Austria,2,1,Macedonia,16-11-2019
-Israel,1,2,Poland,16-11-2019
-Cyprus,1,2,Scotland,16-11-2019
-Russia,1,4,Belgium,16-11-2019
-San Marino,1,3,Kazakhstan,16-11-2019
-Denmark,6,0,Gibraltar,15-11-2019
-Switzerland,1,0,Georgia,15-11-2019
-Norway,4,0,Faroe Islands,15-11-2019
-Romania,0,2,Sweden,15-11-2019
-Spain,7,0,Malta,15-11-2019
-Armenia,0,1,Greece,15-11-2019
-Finland,3,0,Liechtenstein,15-11-2019
-Bosnia-Herzegovina,0,3,Italy,15-11-2019
-England,7,0,Montenegro,14-11-2019
-Czech Republic,2,1,Kosovo,14-11-2019
-Portugal,6,0,Lithuania,14-11-2019
-Serbia,3,2,Luxembourg,14-11-2019
-Turkey,0,0,Iceland,14-11-2019
-Albania,2,2,Andorra,14-11-2019
-France,2,1,Moldova,14-11-2019
+date,competition,team_1,team_1_score,team_2_score,team_2
+19-11-2019,International - European Championship Qualification Group C,Germany,6,1,Northern Ireland
+19-11-2019,International - European Championship Qualification Group C,Netherlands,5,0,Estonia
+19-11-2019,International - European Championship Qualification Group E,Slovakia,2,0,Azerbaijan
+19-11-2019,International - European Championship Qualification Group E,Wales,2,0,Hungary
+19-11-2019,International - European Championship Qualification Group G,Macedonia,1,0,Israel
+19-11-2019,International - European Championship Qualification Group G,Latvia,1,0,Austria
+19-11-2019,International - European Championship Qualification Group G,Poland,3,2,Slovenia
+19-11-2019,International - European Championship Qualification Group I,Belgium,6,1,Cyprus
+19-11-2019,International - European Championship Qualification Group I,San Marino,0,5,Russia
+19-11-2019,International - European Championship Qualification Group I,Scotland,3,1,Kazakhstan
+19-11-2019,International - Africa Cup of Nations Qualification Group E,Burundi,0,3,Morocco
+19-11-2019,International - Africa Cup of Nations Qualification Group E,Mauritania,2,0,Central African Republic
+19-11-2019,International - Africa Cup of Nations Qualification Group H,Zambia,1,2,Zimbabwe
+19-11-2019,International - Africa Cup of Nations Qualification Group J,Libya,2,1,Tanzania
+19-11-2019,International - Africa Cup of Nations Qualification Group J,Equatorial Guinea,0,1,Tunisia
+19-11-2019,International - Africa Cup of Nations Qualification Group K,Ethiopia,2,1,Ivory Coast
+19-11-2019,International - Africa Cup of Nations Qualification Group K,Niger,2,6,Madagascar
+19-11-2019,International - CONCACAF Nations League B Group 2,El Salvador,2,0,Dominican Republic
+19-11-2019,International - CONCACAF Nations League B Group 2,St. Lucia,0,1,Montserrat
+19-11-2019,International - CONCACAF Nations League B Group 3,Aruba,2,3,Antigua and Barbuda
+19-11-2019,International - CONCACAF Nations League B Group 3,Jamaica,1,1,Guyana
+19-11-2019,International - CONCACAF Nations League B Group 4,Nicaragua,1,2,Suriname
+19-11-2019,International - CONCACAF Nations League C Group 3,Puerto Rico,3,0,Anguilla
+19-11-2019,International - National Friendlies,Japan,1,4,Venezuela
+19-11-2019,International - National Friendlies,Brazil,3,0,Korea Republic
+19-11-2019,International - National Friendlies,Saudi Arabia,0,0,Paraguay
+19-11-2019,International - National Friendlies,Montenegro,2,0,Belarus
+19-11-2019,International - National Friendlies,Croatia,2,1,Georgia
+19-11-2019,International - World Cup Qualification AFC 2nd Round Group A,Maldives,3,1,Guam
+19-11-2019,International - World Cup Qualification AFC 2nd Round Group A,Syria,1,0,Philippines
+19-11-2019,International - World Cup Qualification AFC 2nd Round Group B,Nepal,0,1,Kuwait
+19-11-2019,International - World Cup Qualification AFC 2nd Round Group B,Jordan,5,0,Taiwan
+19-11-2019,International - World Cup Qualification AFC 2nd Round Group C,Hong Kong,2,0,Cambodia
+19-11-2019,International - World Cup Qualification AFC 2nd Round Group C,Iraq,0,0,Bahrain
+19-11-2019,International - World Cup Qualification AFC 2nd Round Group D,Uzbekistan,2,0,Palestine
+19-11-2019,International - World Cup Qualification AFC 2nd Round Group D,Yemen,1,2,Singapore
+19-11-2019,International - World Cup Qualification AFC 2nd Round Group E,Afghanistan,0,1,Qatar
+19-11-2019,International - World Cup Qualification AFC 2nd Round Group E,Oman,1,0,India
+19-11-2019,International - World Cup Qualification AFC 2nd Round Group F,Burma,1,0,Mongolia
+19-11-2019,International - World Cup Qualification AFC 2nd Round Group F,Kyrgyzstan,1,1,Tajikistan
+19-11-2019,International - World Cup Qualification AFC 2nd Round Group G,Malaysia,2,0,Indonesia
+19-11-2019,International - World Cup Qualification AFC 2nd Round Group G,Vietnam,0,0,Thailand
+19-11-2019,International - World Cup Qualification AFC 2nd Round Group H,Turkmenistan,2,0,Sri Lanka
+19-11-2019,International - World Cup Qualification AFC 2nd Round Group H,Lebanon,0,0,Korea DPR
+18-11-2019,International - European Championship Qualification Group D,Gibraltar,1,6,Switzerland
+18-11-2019,International - European Championship Qualification Group D,Ireland,1,1,Denmark
+18-11-2019,International - European Championship Qualification Group F,Malta,1,2,Norway
+18-11-2019,International - European Championship Qualification Group F,Spain,5,0,Romania
+18-11-2019,International - European Championship Qualification Group F,Sweden,3,0,Faroe Islands
+18-11-2019,International - European Championship Qualification Group J,Greece,2,1,Finland
+18-11-2019,International - European Championship Qualification Group J,Italy,9,1,Armenia
+18-11-2019,International - European Championship Qualification Group J,Liechtenstein,0,3,Bosnia-Herzegovina
+18-11-2019,International - Africa Cup of Nations Qualification Group C,São Tomé and Príncipe,0,1,Ghana
+18-11-2019,International - Africa Cup of Nations Qualification Group D,Gambia,2,2,Congo DR
+18-11-2019,International - Africa Cup of Nations Qualification Group F,Cape Verde,2,2,Mozambique
+18-11-2019,International - Africa Cup of Nations Qualification Group G,Comoros,0,0,Egypt
+18-11-2019,International - Africa Cup of Nations Qualification Group G,Kenya,1,1,Togo
+18-11-2019,International - Africa Cup of Nations Qualification Group H,Botswana,0,1,Algeria
+18-11-2019,International - CONCACAF Nations League A Group 3,Honduras,4,0,Trinidad and Tobago
+18-11-2019,International - CONCACAF Nations League A Group 4,Costa Rica,1,1,Haiti
+18-11-2019,International - CONCACAF Nations League B Group 1,Grenada,3,2,Belize
+18-11-2019,International - CONCACAF Nations League B Group 4,Dominica,1,0,St. Vincent and the Grenadines
+18-11-2019,International - CONCACAF Nations League C Group 4,Guadeloupe,10,0,Turks and Caicos Islands
+18-11-2019,International - National Friendlies,Argentina,2,2,Uruguay
+17-11-2019,International - European Championship Qualification Group A,Bulgaria,1,0,Czech Republic
+17-11-2019,International - European Championship Qualification Group A,Kosovo,0,4,England
+17-11-2019,International - European Championship Qualification Group B,Serbia,2,2,Ukraine
+17-11-2019,International - European Championship Qualification Group B,Luxembourg,0,2,Portugal
+17-11-2019,International - European Championship Qualification Group H,Andorra,0,2,Turkey
+17-11-2019,International - European Championship Qualification Group H,Moldova,1,2,Iceland
+17-11-2019,International - European Championship Qualification Group H,Albania,0,2,France
+17-11-2019,International - Africa Cup of Nations Qualification Group A,Chad,0,2,Mali
+17-11-2019,International - Africa Cup of Nations Qualification Group A,Guinea,2,0,Namibia
+17-11-2019,International - Africa Cup of Nations Qualification Group B,Uganda,2,0,Malawi
+17-11-2019,International - Africa Cup of Nations Qualification Group B,South Sudan,0,2,Burkina Faso
+17-11-2019,International - Africa Cup of Nations Qualification Group C,South Africa,1,0,Sudan
+17-11-2019,International - Africa Cup of Nations Qualification Group D,Gabon,2,1,Angola
+17-11-2019,International - Africa Cup of Nations Qualification Group F,Rwanda,0,1,Cameroon
+17-11-2019,International - Africa Cup of Nations Qualification Group I,Swaziland,1,4,Senegal
+17-11-2019,International - Africa Cup of Nations Qualification Group I,Congo,3,0,Guinea-Bissau
+17-11-2019,International - Africa Cup of Nations Qualification Group L,Benin,1,0,Sierra Leone
+17-11-2019,International - Africa Cup of Nations Qualification Group L,Lesotho,2,4,Nigeria
+17-11-2019,International - CONCACAF Nations League B Group 1,French Guyana,3,1,St. Kitts and Nevis
+17-11-2019,International - CONCACAF Nations League B Group 2,St. Lucia,1,0,Dominican Republic
+17-11-2019,International - CONCACAF Nations League B Group 2,El Salvador,1,0,Montserrat
+17-11-2019,International - CONCACAF Nations League C Group 1,Cayman Islands,1,0,Virgin Islands
+17-11-2019,International - CONCACAF Nations League C Group 2,Bonaire,1,1,Bahamas
+17-11-2019,International - CONCACAF Nations League C Group 3,Guatemala,5,0,Puerto Rico
+17-11-2019,International - National Friendlies,Lithuania,1,0,New Zealand
+16-11-2019,International - European Championship Qualification Group C,Germany,4,0,Belarus
+16-11-2019,International - European Championship Qualification Group C,Northern Ireland,0,0,Netherlands
+16-11-2019,International - European Championship Qualification Group E,Azerbaijan,0,2,Wales
+16-11-2019,International - European Championship Qualification Group E,Croatia,3,1,Slovakia
+16-11-2019,International - European Championship Qualification Group G,Slovenia,1,0,Latvia
+16-11-2019,International - European Championship Qualification Group G,Austria,2,1,Macedonia
+16-11-2019,International - European Championship Qualification Group G,Israel,1,2,Poland
+16-11-2019,International - European Championship Qualification Group I,Cyprus,1,2,Scotland
+16-11-2019,International - European Championship Qualification Group I,Russia,1,4,Belgium
+16-11-2019,International - European Championship Qualification Group I,San Marino,1,3,Kazakhstan
+16-11-2019,International - Africa Cup of Nations Qualification Group K,Madagascar,1,0,Ethiopia
+16-11-2019,International - Africa Cup of Nations Qualification Group K,Ivory Coast,1,0,Niger
+16-11-2019,International - CONCACAF Nations League A Group 1,USA,4,1,Canada
+16-11-2019,International - CONCACAF Nations League A Group 2,Panama,0,3,Mexico
+16-11-2019,International - CONCACAF Nations League B Group 3,Antigua and Barbuda,0,2,Jamaica
+16-11-2019,International - CONCACAF Nations League B Group 3,Guyana,4,2,Aruba
+16-11-2019,International - CONCACAF Nations League C Group 1,St. Martin,1,0,Barbados
+16-11-2019,International - National Friendlies,Colombia,1,0,Peru
+15-11-2019,International - European Championship Qualification Group D,Denmark,6,0,Gibraltar
+15-11-2019,International - European Championship Qualification Group D,Switzerland,1,0,Georgia
+15-11-2019,International - European Championship Qualification Group F,Norway,4,0,Faroe Islands
+15-11-2019,International - European Championship Qualification Group F,Romania,0,2,Sweden
+15-11-2019,International - European Championship Qualification Group F,Spain,7,0,Malta
+15-11-2019,International - European Championship Qualification Group J,Armenia,0,1,Greece
+15-11-2019,International - European Championship Qualification Group J,Finland,3,0,Liechtenstein
+15-11-2019,International - European Championship Qualification Group J,Bosnia-Herzegovina,0,3,Italy
+15-11-2019,International - Africa Cup of Nations Qualification Group E,Morocco,0,0,Mauritania
+15-11-2019,International - Africa Cup of Nations Qualification Group H,Zimbabwe,0,0,Botswana
+15-11-2019,International - Africa Cup of Nations Qualification Group J,Tanzania,2,1,Equatorial Guinea
+15-11-2019,International - Africa Cup of Nations Qualification Group J,Tunisia,4,1,Libya
+15-11-2019,International - CONCACAF Nations League A Group 3,Martinique,1,1,Honduras
+15-11-2019,International - CONCACAF Nations League A Group 4,Curaçao,1,2,Costa Rica
+15-11-2019,International - CONCACAF Nations League B Group 1,Belize,2,0,French Guyana
+15-11-2019,International - CONCACAF Nations League B Group 4,St. Vincent and the Grenadines,1,0,Nicaragua
+15-11-2019,International - CONCACAF Nations League B Group 4,Suriname,4,0,Dominica
+15-11-2019,International - CONCACAF Nations League C Group 2,Bahamas,3,0,British Virgin Islands
+15-11-2019,International - National Friendlies,Trinidad and Tobago,0,3,Ecuador
+15-11-2019,International - National Friendlies,Brazil,0,1,Argentina
+15-11-2019,International - National Friendlies,Hungary,1,2,Uruguay
+14-11-2019,International - European Championship Qualification Group A,England,7,0,Montenegro
+14-11-2019,International - European Championship Qualification Group A,Czech Republic,2,1,Kosovo
+14-11-2019,International - European Championship Qualification Group B,Portugal,6,0,Lithuania
+14-11-2019,International - European Championship Qualification Group B,Serbia,3,2,Luxembourg
+14-11-2019,International - European Championship Qualification Group H,Turkey,0,0,Iceland
+14-11-2019,International - European Championship Qualification Group H,Albania,2,2,Andorra
+14-11-2019,International - European Championship Qualification Group H,France,2,1,Moldova
+14-11-2019,International - Africa Cup of Nations Qualification Group A,Mali,2,2,Guinea
+14-11-2019,International - Africa Cup of Nations Qualification Group C,Ghana,2,0,South Africa
+14-11-2019,International - Africa Cup of Nations Qualification Group D,Congo DR,0,0,Gabon
+14-11-2019,International - Africa Cup of Nations Qualification Group F,Mozambique,2,0,Rwanda
+14-11-2019,International - Africa Cup of Nations Qualification Group G,Egypt,1,1,Kenya
+14-11-2019,International - Africa Cup of Nations Qualification Group G,Togo,0,1,Comoros
+14-11-2019,International - Africa Cup of Nations Qualification Group H,Algeria,5,0,Zambia
+14-11-2019,International - CONCACAF Nations League B Group 1,St. Kitts and Nevis,0,0,Grenada
+14-11-2019,International - CONCACAF Nations League C Group 4,Turks and Caicos Islands,3,2,Sint Maarten
+14-11-2019,International - National Friendlies,Cambodia,1,1,Mongolia
+14-11-2019,International - National Friendlies,Qatar,2,0,Singapore
+14-11-2019,International - National Friendlies,Ukraine,1,0,Estonia
+14-11-2019,International - National Friendlies,Bulgaria,0,1,Paraguay
+14-11-2019,International - National Friendlies,Ireland,3,1,New Zealand
+14-11-2019,International - World Cup Qualification AFC 2nd Round Group A,Maldives,1,2,Philippines
+14-11-2019,International - World Cup Qualification AFC 2nd Round Group A,Syria,2,1,China
+14-11-2019,International - World Cup Qualification AFC 2nd Round Group B,Jordan,0,1,Australia
+14-11-2019,International - World Cup Qualification AFC 2nd Round Group B,Kuwait,9,0,Taiwan
+14-11-2019,International - World Cup Qualification AFC 2nd Round Group C,Hong Kong,0,0,Bahrain
+14-11-2019,International - World Cup Qualification AFC 2nd Round Group C,Iraq,2,1,Iran
+14-11-2019,International - World Cup Qualification AFC 2nd Round Group D,Uzbekistan,2,3,Saudi Arabia
+14-11-2019,International - World Cup Qualification AFC 2nd Round Group D,Yemen,1,0,Palestine
+14-11-2019,International - World Cup Qualification AFC 2nd Round Group E,Afghanistan,1,1,India
+14-11-2019,International - World Cup Qualification AFC 2nd Round Group E,Oman,4,1,Bangladesh
+14-11-2019,International - World Cup Qualification AFC 2nd Round Group F,Burma,4,3,Tajikistan
+14-11-2019,International - World Cup Qualification AFC 2nd Round Group G,Malaysia,2,1,Thailand
+14-11-2019,International - World Cup Qualification AFC 2nd Round Group G,Vietnam,1,0,United Arab Emirates
+14-11-2019,International - World Cup Qualification AFC 2nd Round Group H,Turkmenistan,3,1,Korea DPR
+14-11-2019,International - World Cup Qualification AFC 2nd Round Group H,Lebanon,0,0,Korea Republic
